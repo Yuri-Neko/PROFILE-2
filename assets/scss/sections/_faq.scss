@@ -1,0 +1,148 @@
+.faq {
+    .faq-content {
+        padding: 120px 0;
+        position: relative;
+        z-index: 2;
+        &::after {
+            content: "\3f";
+            font-family: 'Font Awesome 6 Pro';
+            font-weight: 100;
+            font-size: 400px;
+            color: transparent;
+            background: $gradient-1;
+            background-clip: text;
+            transform: rotate(20deg);
+            position: absolute;
+            top: 80px;
+            left: 20px;
+            opacity: 0.2;
+            z-index: -1;
+        }
+        .faq-box {
+            .single-card {
+                background: $white;
+                box-shadow: 0px 10px 30px rgba($black, 0.07);
+                border-radius: 10px;
+                margin-bottom: 30px;
+                overflow: hidden;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &:first-child {
+                    .faq-body {
+                        display: block;
+                    }
+                }
+                .faq-header {
+                    min-height: 50px;
+                    padding: 0 30px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+                    h3 {
+                        font-size: 16px;
+                        line-height: 20px;
+                        font-weight: 500;
+                        color: $black-4;
+                        margin-bottom: 0;
+                    }
+                    .icon {
+                        text-align: center;
+                        width: 35px;
+                        height: 35px;
+                        line-height: 35px;
+                        font-size: 18px;
+                        background: $gradient-1;
+                        color: $white;
+                        border-radius: 50%;
+                    }
+                }
+                .faq-body {
+                    display: none;
+                    padding: 30px;
+                    border-top: 1px solid rgba($black, 0.1);
+                    p {
+                        font-size: 16px;
+                        line-height: 30px;
+                        color: $black-6;
+                        margin-top: -8px;
+                        margin-bottom: -10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 576px) {
+    .faq {
+        .faq-content {
+            padding: 60px 0;
+            &::after {
+                top: 10px;
+                left: 10px;
+                font-size: 150px;
+            }
+            .faq-box {
+                .single-card {
+                    margin-bottom: 25px;
+                    .faq-header {
+                        padding: 10px 15px;
+                        gap: 10px;
+                        h3 {
+                            width: calc(100% - 35px);
+                        }
+                        .icon {
+                            width: 25px;
+                            height: 25px;
+                            line-height: 25px;
+                        }
+                    }
+                    .faq-body {
+                        padding: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) and (min-width: 320px) {
+    .faq {
+        .faq-content {
+            padding: 60px 0;
+            &::after {
+                top: 50px;
+                left: 10px;
+                font-size: 150px;
+            }
+            .faq-box {
+                .single-card {
+                    margin-bottom: 25px;
+                    .faq-header {
+                        padding: 10px 15px;
+                        gap: 10px;
+                        h3 {
+                            width: calc(100% - 35px);
+                            font-size: 14px;
+                        }
+                        .icon {
+                            width: 25px;
+                            height: 25px;
+                            line-height: 25px;
+                        }
+                    }
+                    .faq-body {
+                        padding: 20px;
+                        p {
+                            font-size: 12px;
+                            line-height: 26px;
+                            margin-bottom: -9px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

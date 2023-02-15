@@ -1,0 +1,21 @@
+.contact {
+    .contact-content {
+        &::before {
+            opacity: 0.8;
+        }
+        .contact-form {
+            background: $dark-bg-3;
+            .form-group {
+                label {
+                    background: $dark-bg-3;
+                    color: $dark-txt-3;
+                }
+                input, textarea {
+                    border-color: $black-4;
+                    background: transparent;
+                    color: $dark-txt-2;
+                }
+            }
+        }
+    }
+}

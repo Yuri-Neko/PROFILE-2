@@ -1,0 +1,35 @@
+.blog {
+    .blog-content {
+        .single-blog {
+            background: $dark-bg-3;
+            .part-txt {
+                h3 {
+                    a {
+                        color: $dark-txt-2;
+                    }
+                }
+                ul {
+                    li {
+                        color: $dark-txt-3;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.blog-details {
+    .part-txt {
+        h2 {
+            color: $dark-txt-2;
+        }
+        ul {
+            li {
+                color: $dark-txt-3;
+            }
+        }
+        p {
+            color: $dark-txt-3;
+        }
+    }
+}

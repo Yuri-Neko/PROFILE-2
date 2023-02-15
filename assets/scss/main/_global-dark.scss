@@ -1,0 +1,22 @@
+body {
+    background: $black;
+}
+
+.section-title {
+    color: $white-2;
+}
+
+.section-panel {
+    background: $dark-bg-1;
+}
+
+.modal-content {
+    background: $dark-bg-3;
+    .modal-header {
+        border-color: $black-6;
+    }
+}
+
+.nice-select::after {
+    color: $dark-txt-1;
+}

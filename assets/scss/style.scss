@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/*============================================================
+[Master Stylesheet]
+Theme Name:     Devolin
+Version:        1.0
+Author:         DropletWeb
+URL:            https://themeforest.net/user/dropletweb
+=========================================================*/
+
+
+/*=======================================================
+TABLE OF CONTENTS:
+
+01  all anmation Style
+02  global Style
+
+======section stylsheet======
+
+03  sidebar section
+04  Header section
+05  Banner section
+06  About section
+07  Service section
+08  Portfolio section 
+09  Faq section
+10  Gallery section
+11  Blog section
+12  Contact section*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "main/variable";
+@import "main/animation";
+@import "main/global";
+
+@import "sections/sidebar";
+@import "sections/header";
+@import "sections/banner";
+@import "sections/about";
+@import "sections/service";
+@import "sections/portfolio";
+@import "sections/faq";
+@import "sections/gallery";
+@import "sections/blog";
+@import "sections/contact";

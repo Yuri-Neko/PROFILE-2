@@ -1,0 +1,40 @@
+// ============== FONTS ==============
+$main-font: 'Poppins', sans-serif;
+$heading-font: 'Josefin Sans', sans-serif;
+
+// ============== COLORS ==============
+
+$white: #fff;
+$white-2: #eaeaea;
+$black: #000;
+$black-2: #323232;
+$black-3: #424242;
+$black-4: #606060;
+$black-5: #bfbfbf;
+$black-6: #747474;
+
+$dark-bg-1: #161D35;
+$dark-bg-2: #1C2640;
+$dark-bg-3: #203255;
+$dark-txt-1: #d8d8d8;
+$dark-txt-2: #bfbfbf;
+$dark-txt-3: #9d9d9d;
+
+$color-1: #CB26B6;
+$color-2: #F8B127;
+$color-3: #f365a3;
+$color-4: #73c016;
+$color-5: #9f2b83;
+
+
+$gradient-1: linear-gradient(135deg, $color-1, $color-2);
+$gradient-2: linear-gradient(135deg, $color-2, $color-1);
+$gradient-3: linear-gradient(45deg, $color-3, $color-4);
+$gradient-4: linear-gradient(45deg, $color-4, $color-3);
+$gradient-5: linear-gradient(45deg, $color-1, $color-3);
+$gradient-6: linear-gradient(45deg, $color-3, $color-1);
+$gradient-7: linear-gradient(45deg, $color-2, $color-4);
+$gradient-8: linear-gradient(45deg, $color-4, $color-2);
+$gradient-9: linear-gradient(135deg, $color-1, #c78a10);
+$blur-gradient-1: radial-gradient(rgba(230, 18, 188, 0.2), transparent 65%);
+$blur-gradient-2: radial-gradient(rgba(10, 27, 216, 0.2), transparent 65%);

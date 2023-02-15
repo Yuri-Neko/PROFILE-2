@@ -1,0 +1,42 @@
+@mixin center($max-width: $jeet-max-width, $pad: 0) {
+  @include cf;
+  width: auto;
+  max-width: $max-width;
+  float: none;
+  display: block;
+  margin: {
+    right: auto;
+    left:  auto;
+  };
+  padding: {
+    left:  $pad;
+    right: $pad;
+  };
+}
+@mixin cf() {
+  *zoom: 1;
+
+  &:before, &:after {
+    content: '';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+@mixin span($ratio: 1, $offset: 0, $cycle: 0, $uncycle: 0) {
+  $side: jeet-get-layout-direction();
+  $opposite-side: jeet-opposite-direction($side);
+  $span-width: jeet-get-span($ratio);
+  $margin-r: 0;
+  $margin-l: $margin-r;
+  @if $offset != 0 {
+    @if $offset < 0 {
+      $offset: $offset * -1;
+      $margin-r: jeet-get-span($offset);
+    } @else {
+      $margin-l: jeet-get-span($offset);
+    }
+  }
+}

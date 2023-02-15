@@ -1,0 +1,20 @@
+.faq {
+    .faq-content {
+        .faq-box {
+            .single-card {
+                background: $dark-bg-3;
+                .faq-header {
+                    h3 {
+                        color: $dark-txt-2;
+                    }
+                }
+                .faq-body {
+                    border-color: $black-3;
+                    p {
+                        color: $dark-txt-3;
+                    }
+                }
+            }
+        }
+    }
+}

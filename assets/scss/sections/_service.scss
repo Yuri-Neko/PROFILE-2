@@ -1,0 +1,431 @@
+.service {
+    .service-content {
+        padding: 120px 0;
+        .single-service-box {
+            background: $white;
+            box-shadow: 0px 5px 30px rgba($black, 0.05);
+            border-radius: 15px;
+            padding: 35px;
+            transition: .5s;
+            position: relative;
+            overflow: hidden;
+            z-index: 2;
+            &::after {
+                content: "";
+                position: absolute;
+                background: $gradient-2;
+                background: url(../images/square-bg.jpg) center center no-repeat;
+                background-size: cover;
+                border-radius: 50%;
+                transition: .5s;
+            }
+            .part-icon {
+                height: 50px;
+                margin-bottom: 28px;
+                span {
+                    font-size: 50px;
+                    line-height: 50px;
+                    color: transparent;
+                    background: $gradient-1;
+                    background-clip: text;
+                    transition: .5s;
+                }
+            }
+            .part-txt {
+                h3 {
+                    font-size: 20px;
+                    line-height: 100%;
+                    margin-bottom: 15px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: $black-4;
+                    margin-bottom: -9px;
+                    transition: .5s;
+                }
+            }
+            &:hover {
+                color: $white;
+                transform: translateY(-5px);
+                box-shadow: 0px 10px 30px rgba($black, 0.07);
+                .part-icon {
+                    span {
+                        color: $white;
+                    }
+                }
+                .part-txt {
+                    p {
+                        color: $white-2;
+                    }
+                }
+                &::after {
+                    top: 50%;
+                    left: 50%;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 15px;
+                    transform: translateX(-50%) translateY(-50%);
+                    z-index: -1;
+                    animation: service .45s ease-in;
+                }
+            }
+        }
+    }
+    .cta {
+        padding: 60px 0;
+        background: url(../images/cta-bg.jpg) center center no-repeat;
+        background-size: cover;
+        .part-txt {
+            width: 75%;
+            h2 {
+                font-family: $heading-font;
+                font-size: 50px;
+                line-height: 60px;
+                font-weight: 600;
+                color: $white;
+                margin-top: -5px;
+                margin-bottom: -18px;
+            }
+        }
+        .part-btn {
+            width: 25%;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    .pricing {
+        padding: 120px 0;
+        .single-price {
+            background: $white;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba($black, 0.07);
+            overflow: hidden;
+            transition: .3s;
+            .top {
+                background: $gradient-1;
+                background: url(../images/vector-3.png) bottom center no-repeat;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 40px 30px;
+                margin-bottom: 30px;
+                h3 {
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    border-radius: 15px;
+                    background: $white;
+                    color: $color-1;
+                    padding: 0 20px;
+                    margin-bottom: 30px;
+                }
+                .part-icon {
+                    width: 80px;
+                    height: 80px;
+                    text-align: center;
+                    line-height: 80px;
+                    background: $white;
+                    border-radius: 50%;
+                    span {
+                        width: 100%;
+                        height: 100%;
+                        border: 1px dashed $color-1;
+                        border-radius: 50%;
+                        font-size: 35px;
+                        color: transparent;
+                        background: $gradient-1;
+                        background-clip: text;
+                    }
+                }
+            }
+            .middle {
+                padding: 0 40px;
+                ul {
+                    margin-top: -8px;
+                    margin-bottom: 20px;
+                    li {
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 14px;
+                        line-height: 30px;
+                        font-weight: 500;
+                        color: $black-4;
+                        margin-bottom: 10px;
+                        span {
+                            font-size: 12px;
+                            font-family: $heading-font;
+                            small {
+                                color: $black-6;
+                            }
+                        }
+                    }
+                }
+            }
+            .bottom {
+                display: flex;
+                justify-content: center;
+                padding-bottom: 40px;
+            }
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0px 10px 30px rgba($black, 0.1);
+            }
+        }
+    }
+}
+
+.pricing-form {
+    .form-group {
+        position: relative;
+        label {
+            display: block;
+            width: max-content;
+            font-size: 14px;
+            line-height: 100%;
+            margin: 0 15px;
+            padding: 0 5px;
+            background: $white;
+            color: $black-6;
+            margin-bottom: -5px;
+            position: relative;
+            z-index: 2;
+        }
+        input, .my-select {
+            width: 100%;
+            height: 40px;
+            line-height: 38px;
+            font-size: 14px;
+            padding: 0 20px;
+            border: 1px solid rgba($black-4, .3);
+            border-radius: 20px;
+            transition: .3s;
+            .option.disabled {
+                display: none;
+            }
+            &:focus {
+                border-color: $color-1;
+            }
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            line-height: 24px;
+            font-size: 14px;
+            padding: 10px 20px;
+            border: 1px solid rgba($black-4, .3);
+            border-radius: 20px;
+            vertical-align: top;
+            transition: .3s;
+            &:focus {
+                border-color: $color-1;
+            }
+        }
+    }
+    .btn-box {
+        padding-top: 1px;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 576px) {
+    .service {
+        .service-content {
+            padding: 60px 0;
+            .single-service-box {
+                padding: 25px;
+                border-radius: 10px;
+                .part-icon {
+                    height: max-content;
+                    margin-bottom: 18px;
+                    span {
+                        font-size: 35px;
+                        line-height: 100%;
+                    }
+                }
+                .part-txt {
+                    h3 {
+                        font-size: 18px;
+                        margin-bottom: 11px;
+                    }
+                    p {
+                        font-size: 14px;
+                        line-height: 26px;
+                        margin-bottom: -8px;
+                    }
+                }
+            }
+        }
+        .cta {
+            padding: 40px 0;
+            .part-txt {
+                width: 65%;
+                h2 {
+                    font-size: 30px;
+                    line-height: 40px;
+                    margin-bottom: -13px;
+                }
+            }
+            .part-btn {
+                width: 35%;
+            }
+        }
+        .pricing {
+            padding: 60px 0;
+            .single-price {
+                border-radius: 10px;
+                .top {
+                    padding: 30px 20px;
+                    margin-bottom: 25px;
+                    h3 {
+                        height: 25px;
+                        line-height: 25px;
+                        font-size: 12px;
+                        padding: 0 15px;
+                        margin-bottom: 20px;
+                    }
+                    .part-icon {
+                        width: 60px;
+                        height: 60px;
+                        line-height: 60px;
+                        span {
+                            font-size: 30px;
+                        }
+                    }
+                }
+                .middle {
+                    padding: 0 20px;
+                    ul {
+                        margin-top: -7px;
+                        margin-bottom: 17px;
+                        li {
+                            line-height: 25px;
+                        }
+                    }
+                }
+                .bottom {
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .service {
+        .pricing {
+            .single-price {
+                .top {
+                    padding: 30px;
+                }
+                .middle {
+                    padding: 0 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) and (min-width: 320px) {
+    .service {
+        .service-content {
+            padding: 60px 0;
+            .single-service-box {
+                max-width: 290px;
+                margin: auto;
+                padding: 25px;
+                border-radius: 10px;
+                .part-icon {
+                    height: max-content;
+                    margin-bottom: 18px;
+                    span {
+                        font-size: 35px;
+                        line-height: 100%;
+                    }
+                }
+                .part-txt {
+                    h3 {
+                        font-size: 18px;
+                        margin-bottom: 11px;
+                    }
+                    p {
+                        font-size: 14px;
+                        line-height: 26px;
+                        margin-bottom: -8px;
+                    }
+                }
+            }
+        }
+        .cta {
+            padding: 40px 0;
+            .part-txt {
+                width: 100%;
+                text-align: center;
+                h2 {
+                    font-size: 30px;
+                    line-height: 40px;
+                    margin-bottom: 17px;
+                }
+            }
+            .part-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        .pricing {
+            padding: 60px 0;
+            .single-price {
+                border-radius: 10px;
+                max-width: 290px;
+                margin: auto;
+                .top {
+                    padding: 30px 25px;
+                    margin-bottom: 25px;
+                    h3 {
+                        height: 25px;
+                        line-height: 25px;
+                        font-size: 12px;
+                        padding: 0 15px;
+                        margin-bottom: 20px;
+                    }
+                    .part-icon {
+                        width: 60px;
+                        height: 60px;
+                        line-height: 60px;
+                        span {
+                            font-size: 30px;
+                        }
+                    }
+                }
+                .middle {
+                    padding: 0 25px;
+                    ul {
+                        margin-top: -7px;
+                        margin-bottom: 17px;
+                        li {
+                            line-height: 25px;
+                        }
+                    }
+                }
+                .bottom {
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    .pricing-form {
+        .form-group {
+            input, .my-select {
+                height: 35px;
+                line-height: 33px;
+                padding: 0 15px;
+            }
+            textarea {
+                border-radius: 15px;
+            }
+        }
+    }
+}

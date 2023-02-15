@@ -1,0 +1,48 @@
+.about {
+    .about-content {
+        .part-txt {
+            p {
+                color: $dark-txt-3;
+            }
+            .progress-wrap {
+                .progress-box {
+                    .circle-progressbar {
+                        .txt {
+                            span {
+                                color: $dark-txt-2;
+                            }
+                            p {
+                                color: $dark-txt-3;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .education {
+        ul {
+            li {
+                &:nth-child(odd) {
+                    .single-box {
+                        &::after {
+                            border-color: $black-4;
+                        }
+                    }
+                }
+                .single-box {
+                    background: $dark-bg-2;
+                    &::after {
+                        border-color: $black-4;
+                    }
+                    .title {
+                        color: $dark-txt-2;
+                    }
+                    p {
+                        color: $dark-txt-3;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.banner {
+    background: $dark-bg-2;
+    &::after {
+        opacity: 0.13;
+        background: url(../images/main-bg-dark.jpg) bottom center no-repeat;
+        background-size: cover;
+    }
+    .main-social {
+        &::after {
+            background: $black-5;
+        }
+    }
+    .banner-txt {
+        &::before, &::after {
+            filter: grayscale(10);
+            opacity: 0.3;
+        }
+        h3 {
+            color: $dark-txt-3;
+        }
+        h1 {
+            color: $dark-txt-1;
+        }
+        h2 {
+            color: $dark-txt-3;
+        }
+        p {
+            color: $dark-txt-3
+        }
+        .btn-box {
+            a {
+                &:nth-child(2) {
+                    &::after {
+                        background: $dark-bg-1;
+                    }
+                }
+            }
+        }
+    }
+    .nav-wrap {
+        .nav-grid {
+            &::after {
+                opacity: 0.2;
+            }
+        }
+    }
+    .copyright {
+        p {
+            color: $dark-txt-3;
+        }
+    }
+}

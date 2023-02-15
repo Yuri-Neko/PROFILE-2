@@ -1,0 +1,61 @@
+.service {
+    .service-content {
+        .single-service-box {
+            background: $dark-bg-3;
+            .part-txt {
+                h3 {
+                    color: $dark-txt-2;
+                }
+                p {
+                    color: $dark-txt-3;
+                }
+            }
+        }
+    }
+    .pricing {
+        .single-price {
+            background: $dark-bg-3;
+            .top {
+                h3 {
+                    background: $dark-bg-3;
+                }
+                .part-icon {
+                    background: $dark-bg-3;
+                }
+            }
+            .middle {
+                ul {
+                    li {
+                        color: $dark-txt-3;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pricing-form {
+    .form-group {
+        label {
+            background: $dark-bg-3;
+            color: $dark-txt-3;
+        }
+        input, .my-select, textarea {
+            border-color: $black-4;
+            background: transparent;
+            color: $dark-txt-2;
+            .list {
+                background: $dark-bg-2;
+                color: $dark-txt-3;
+                li {
+                    &.focus {
+                        background: $dark-bg-1;
+                    }
+                    &:hover {
+                        background: $dark-bg-1;
+                    }
+                }
+            }
+        }
+    }
+}

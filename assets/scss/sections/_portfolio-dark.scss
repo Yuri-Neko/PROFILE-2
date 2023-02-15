@@ -1,0 +1,47 @@
+.portfolio {
+    .portfolio-content {
+        .filter-nav {
+            .filter-btn {
+                color: $dark-txt-3;
+                &.active {
+                    color: $dark-txt-2;
+                }
+            }
+        }
+        .single-portfolio-box {
+            background: $dark-bg-3;
+            .part-txt {
+                h3 {
+                    color: $dark-txt-2;
+                }
+                .info {
+                    color: $dark-txt-3;
+                    span {
+                        color: $black-5;
+                    }
+                }
+            }
+        }
+    }
+    .our-client {
+        background: url(../images/client-bg-dark.jpg) center center no-repeat;
+        background-size: cover;
+        .single-client {
+            img {
+                filter: brightness(2);
+            }
+        }
+    }
+    .testimonial {
+        .single-feedback {
+            .part-txt {
+                p, span {
+                    color: $dark-txt-3;
+                }
+                h3 {
+                    color: $dark-txt-2;
+                }
+            }
+        }
+    }
+}

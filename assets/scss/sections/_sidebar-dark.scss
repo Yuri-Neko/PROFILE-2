@@ -1,0 +1,19 @@
+.sidebar-overlay {
+    .sidebar {
+        background: $dark-bg-1;
+        h3 {
+            border-bottom-color: $black-3;
+        }
+        .bottom {
+            .btn-box {
+                .theme-color-change {
+                    color: $black-6;
+                    background: $white-2;
+                }
+                span {
+                    color: $dark-txt-2;
+                }
+            }
+        }
+    }
+}

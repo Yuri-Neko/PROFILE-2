@@ -1,0 +1,356 @@
+@import "main/variable";
+
+/*===== Global Style =====*/
+body {
+    background: $dark-bg-1;
+}
+
+.def-btn {
+    &.def-btn-2 {
+        background: $dark-bg-3;
+        color: $white;
+    }
+}
+
+.border {
+    border-color: $black-4 !important;
+}
+
+.section-panel {
+    background: $dark-bg-2;
+}
+
+.section-title {
+    color: $white;
+}
+
+.modal-content {
+    background: $dark-bg-2;
+    .modal-header {
+        background: $dark-bg-3;
+        h5 {
+            color: $white-2;
+        }
+    }
+}
+
+/*===== Sidebar Style =====*/
+.sidebar-overlay {
+    .sidebar {
+        background: $dark-bg-2;
+        h3 {
+            color: $color-2;
+        }
+        .bottom {
+            .form-check {
+                label {
+                    color: $dark-txt-1;
+                }
+            }
+        }
+    }
+}
+
+/*===== Header Style =====*/
+.header {
+    background: $dark-bg-2;
+}
+
+/*===== Banner Style =====*/
+.banner {
+    background: url(../images/main-bg-dark.jpg) center center no-repeat;
+    background-size: cover;
+    &::after {
+        background: $dark-bg-2;
+    }
+    .banner-txt {
+        h3 {
+            color: $black-5;
+        }
+        h1 {
+            color: $white;
+        }
+        h2 {
+            color: $black-5;
+        }
+        p {
+            color: $black-5;
+        }
+    }
+    .copyright {
+        p {
+            color: $dark-txt-1;
+            span {
+                color: $color-2;
+            }
+        }
+    }
+}
+
+/*===== About Modal Style =====*/
+.about {
+    .about-content {
+        .part-txt {
+            p {
+               color: $black-5;
+            }
+            .progress-wrap {
+                .progress-box {
+                    .circle-progressbar {
+                        .txt {
+                            span {
+                                font-weight: 400;
+                                color: $white-2;
+                            }
+                            p {
+                                color: $black-5;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .education {
+        ul {
+            li {
+                .single-box {
+                    background: $dark-bg-3;
+                    &::after {
+                        opacity: 0.2;
+                    }
+                    .title {
+                        color: $white-2;
+                        font-weight: 500;
+                    }
+                    p {
+                        color: $black-5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*===== Service Modal Style =====*/
+.service {
+    .service-content {
+        .single-service-box {
+            background: $dark-bg-3;
+            .part-txt {
+                h3 {
+                    color: $white-2;
+                }
+                p {
+                    color: $black-5;
+                }
+            }
+        }
+    }
+    .pricing {
+        .single-price {
+            background: $dark-bg-3;
+            .top {
+                h3 {
+                    background: $dark-bg-3;
+                    color: $color-2;
+                }
+                .part-icon {
+                    background: $dark-bg-3;
+                    span {
+                        border-color: $color-2;
+                    }
+                }
+            }
+            .middle {
+                ul {
+                    li {
+                        color: $white-2;
+                        font-weight: 400;
+                        span {
+                            small {
+                                color: $black-5;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.pricing-form {
+    .form-group {
+        label {
+            background: $dark-bg-2;
+            color: $dark-txt-2;
+        }
+        input, .my-select, textarea {
+            background: $dark-bg-2;
+            color: $dark-txt-1;
+            border-color: rgba($white, .2);
+            .list {
+                background: $dark-bg-3;
+                li {
+                    &:hover {
+                        background: $dark-bg-1;
+                    }
+                    &.selected {
+                        background: $dark-bg-1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*===== Portfolio Modal Style =====*/
+.portfolio {
+    .portfolio-content {
+        .filter-nav {
+            .filter-btn {
+                color: $dark-txt-1;
+                &.active {
+                    color: $white-2;
+                }
+            }
+        }
+        .single-portfolio-box {
+            background: $dark-bg-3;
+            .part-txt {
+                h3 {
+                    color: $white-2;
+                    font-weight: 500;
+                }
+                .info {
+                    color: $black-5;
+                    span {
+                        color: $white-2;
+                    }
+                }
+                a {
+                    color: $black-5;
+                }
+            }
+        }
+        .empty-msg {
+            color: $black-5;
+        }
+    }
+    .our-client {
+        background: url(../images/client-bg-2.jpg) center center no-repeat;
+        background-size: cover;
+    }
+    .testimonial {
+        .single-feedback {
+            .part-txt {
+                p {
+                    color: $dark-txt-1;
+                }
+                h3 {
+                    color: $white-2;
+                }
+                span {
+                    color: $dark-txt-1;
+                }
+            }
+        }
+        .slick-arrow {
+            color: $white-2;
+        }
+    }
+}
+
+/*===== Gallery Modal Style =====*/
+.gallery {
+    .gallery-content {
+        .single-img {
+            .hover {
+                button {
+                    background: $dark-bg-3;
+                    color: $color-2;
+                }
+            }
+        }
+    }
+}
+
+/*===== Faq Modal Style =====*/
+.faq {
+    .faq-content {
+        .faq-box {
+            .single-card {
+                background: $dark-bg-3;
+                .faq-header {
+                    h3 {
+                        color: $white-2;
+                    }
+                }
+                .faq-body {
+                    border-top-color: rgba($white, .1);
+                    p {
+                        color: $dark-txt-1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*===== Blog Modal Style =====*/
+.blog {
+    .blog-content {
+        .single-blog {
+            background: $dark-bg-3;
+            .part-txt {
+                h3 {
+                    a {
+                        color: $white-2;
+                        &:hover {
+                            color: $color-2;
+                        }
+                    }
+                }
+                ul {
+                    li {
+                        color: $dark-txt-1;
+                    }
+                }
+            }
+        }
+    }
+}
+.blog-details {
+    .part-txt {
+        h2 {
+            color: $white;
+        }
+        ul {
+            li {
+                color: $dark-txt-1;
+            }
+        }
+        p {
+            color: $dark-txt-2;
+        }
+    }
+}
+
+/*===== Contact Modal Style =====*/
+.contact {
+    .contact-content {
+        .contact-form {
+            background: $dark-bg-3;
+            .form-group {
+                label {
+                    background: $dark-bg-3;
+                    color: $dark-txt-2;
+                }
+                input, textarea {
+                    background: $dark-bg-3;
+                    color: $dark-txt-1;
+                    border-color: rgba($white, .2);
+                }
+            }
+        }
+    }
+}
